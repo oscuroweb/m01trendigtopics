@@ -14,7 +14,7 @@ import scala.Tuple2;
 /**
  * MostActiveUser:
  * <p>
- * DESC
+ * Get the most active users from a list of tweets.
  * </p>
  * 
  * @author Hidalgo Calero, R.
@@ -25,6 +25,15 @@ public class MostActiveUser {
     /** Log instance. */
     private static Logger log = Logger.getLogger(MostActiveUser.class.getName());
 
+    /**
+     * 
+     * Method main.
+     * <p>
+     * Execute Most Active User program.
+     * </p>
+     * 
+     * @param args Input parameters
+     */
     public static void main(String[] args) {
 
         // Validate arguments list. File name or directory is required

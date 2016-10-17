@@ -46,6 +46,15 @@ public class TrendingTopic {
     /** Number of TTs to take. */
     private static int NUMBER_OF_TTS = 10;
 
+    /**
+     * 
+     * Method main.
+     * <p>
+     * Execute Trending Topic program.
+     * </p>
+     * 
+     * @param args Input parameters
+     */
     public static void main(String[] args) {
 
         // Validate arguments list. File name or directory is required
