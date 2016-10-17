@@ -1,2 +1,2 @@
 @Big12Conference: 143
-Computing time: 3373
+Computing time: 3484

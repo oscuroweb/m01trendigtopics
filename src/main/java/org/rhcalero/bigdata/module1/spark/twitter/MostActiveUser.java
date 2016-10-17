@@ -1,7 +1,5 @@
 package org.rhcalero.bigdata.module1.spark.twitter;
 
-import java.util.List;
-
 import org.apache.log4j.Logger;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaPairRDD;
@@ -77,17 +75,16 @@ public class MostActiveUser {
         log.debug("[DEBUG] STEP 8 Sort users by number of tweet.");
 
         // STEP 9: Get the most active users
-        List<Tuple2<Integer, String>> activeUsers = sortedCountUsersPair.take(1);
+        Tuple2<Integer, String> activeUser = sortedCountUsersPair.first();
 
         // Get computing time
         long computingTime = System.currentTimeMillis() - initTime;
 
         // STEP 10: Print the result
-        for (Tuple2<Integer, String> tuple : activeUsers) {
-            StringBuffer tupleStr = new StringBuffer();
-            tupleStr.append(tuple._2()).append(": ").append(tuple._1());
-            System.out.println(tupleStr.toString());
-        }
+        StringBuffer tupleStr = new StringBuffer();
+        tupleStr.append(activeUser._2()).append(": ").append(activeUser._1());
+        System.out.println(tupleStr.toString());
+
         System.out.println("Computing time: " + computingTime);
 
         // STEP 11: Stop the spark context
