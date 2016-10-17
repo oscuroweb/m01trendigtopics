@@ -1,0 +1,12 @@
+big12conference:: 286
+#big12: 245
+#big12mbb: 224
+big12conference: 191
+championship: 145
+baylormbb: 133
+#big12mbb:: 133
+quarterfinal: 127
+thursday's: 125
+tcubasketball: 118
+Computing time: 3654
+Total words: 10
