@@ -96,11 +96,11 @@ public class MostActiveUser {
     /**
      * Method getUserTuple.
      * <p>
-     * DESC.
+     * Get a tuple where the key is the user name and value is 1.
      * </p>
      * 
-     * @param line
-     * @return
+     * @param line Line of tweet
+     * @return Tuple username, 1
      */
     private static Tuple2<String, Integer> getUserTuple(String line) {
         Tweet tweet = new Tweet(line);

@@ -154,12 +154,10 @@ public class Tweet implements Serializable {
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        builder.append(id);
-        builder.append("\\t ");
         builder.append(username);
-        builder.append("\\t ");
-        builder.append(tweet);
-        builder.append("\\t ");
+        builder.append("\t ");
+        builder.append(tweet.length());
+        builder.append("\t ");
         builder.append(date);
         return builder.toString();
     }
