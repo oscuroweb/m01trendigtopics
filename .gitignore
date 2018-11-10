@@ -7,3 +7,5 @@ target/
 *.prefs
 *.txt
 *~
+.idea/
+main.iml
